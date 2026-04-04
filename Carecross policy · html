@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy | CareCross Surgery | Piet Retief</title>
+<meta name="description" content="Privacy Policy for CareCross Surgery — how we collect, use and protect your personal and health information in compliance with POPIA.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#C62828;--red-dark:#8E0000;--red-light:#FFEBEE;--cream:#FDF6EC;--cream-card:#FFFAF4;--cream-border:#EDE0D0;--charcoal:#1C1C1E;--text:#2C1A0E;--text-muted:#6B5E52;--gradient:linear-gradient(135deg,#8E0000 0%,#C62828 60%,#E53935 100%);--radius:14px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Nunito',sans-serif;color:var(--text);background:var(--cream);line-height:1.7;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(28,28,30,0.97);backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:space-between;padding:0 5%;height:68px;box-shadow:0 2px 20px rgba(0,0,0,0.25);}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.nav-logo-icon{width:42px;height:42px;background:var(--gradient);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:white;}
+.nav-logo-text{display:flex;flex-direction:column;line-height:1.2;}
+.nav-logo-text span:first-child{font-family:'Playfair Display',serif;color:white;font-size:1rem;font-weight:700;}
+.nav-logo-text span:last-child{color:#FFAB91;font-size:0.68rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;}
+.nav-links{display:flex;gap:28px;list-style:none;}
+.nav-links a{color:rgba(255,255,255,0.82);text-decoration:none;font-size:0.9rem;font-weight:600;transition:color 0.2s;}
+.nav-links a:hover,.nav-links a.active{color:#FFAB91;}
+.nav-cta{background:var(--gradient);color:white;text-decoration:none;padding:9px 22px;border-radius:8px;font-size:0.88rem;font-weight:700;}
+.page-header{background:var(--gradient);padding:130px 5% 72px;text-align:center;color:white;}
+.page-header span{display:inline-block;color:#FFCCBC;font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:14px;}
+.page-header h1{font-family:'Playfair Display',serif;color:white;font-size:clamp(2rem,4vw,2.8rem);margin-bottom:14px;}
+.page-header p{color:rgba(255,255,255,0.75);font-size:0.95rem;max-width:480px;margin:0 auto;}
+.policy-body{padding:80px 5%;background:var(--cream);}
+.policy-inner{max-width:800px;margin:0 auto;}
+.policy-meta{background:var(--cream-card);border:1px solid var(--cream-border);border-radius:var(--radius);padding:18px 24px;margin-bottom:36px;display:flex;gap:32px;flex-wrap:wrap;}
+.policy-meta p{font-size:0.82rem;color:var(--text-muted);}
+.policy-meta strong{color:var(--charcoal);}
+.policy-section{background:var(--cream-card);border:1px solid var(--cream-border);border-radius:var(--radius);padding:30px 34px;margin-bottom:18px;}
+.policy-section h2{font-family:'Playfair Display',serif;color:var(--charcoal);font-size:1.2rem;margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+.policy-section h2 span{display:inline-flex;width:30px;height:30px;background:var(--red-light);border-radius:8px;align-items:center;justify-content:center;font-family:'Nunito',sans-serif;font-size:0.82rem;color:var(--red);font-weight:700;}
+.policy-section p{color:var(--text-muted);font-size:0.9rem;margin-bottom:12px;}
+.policy-section p:last-child{margin-bottom:0;}
+.policy-section ul{color:var(--text-muted);font-size:0.9rem;padding-left:20px;margin-bottom:12px;}
+.policy-section ul li{margin-bottom:6px;}
+.policy-section a{color:var(--red);}
+.contact-box{background:var(--red-light);border:1px solid #FFCDD2;border-radius:var(--radius);padding:20px;margin-top:14px;}
+.contact-box p{color:var(--red-dark);font-size:0.88rem;}
+.contact-box a{color:var(--red-dark);font-weight:700;}
+footer{background:var(--charcoal);padding:52px 5% 28px;}
+.footer-grid{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:24px;}
+.footer-brand p{color:rgba(255,255,255,0.55);font-size:0.88rem;line-height:1.7;margin-top:14px;max-width:280px;}
+.footer-col h4{color:#FFAB91;font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.footer-col ul li a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.88rem;}
+.footer-col ul li a:hover{color:#FFAB91;}
+.footer-col ul li span{color:rgba(255,255,255,0.6);font-size:0.88rem;}
+.footer-bottom{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-bottom p{color:rgba(255,255,255,0.35);font-size:0.78rem;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;}
+.footer-bottom a:hover{color:#FFAB91;}
+@media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:640px){.nav-links,.nav-cta{display:none;}.policy-section{padding:22px 18px;}.footer-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="index.html"><div class="nav-logo-icon">✚</div><div class="nav-logo-text"><span>CareCross Surgery</span><span>Piet Retief, Mkhondo</span></div></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="after-hours.html">After-Hours</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="booking.html">Book</a></li>
+  </ul>
+  <a class="nav-cta" href="booking.html">Book Appointment</a>
+</nav>
+
+<div class="page-header">
+  <span>Legal</span>
+  <h1>Privacy Policy</h1>
+  <p>How CareCross Surgery collects, uses and protects your personal and health information.</p>
+</div>
+
+<div class="policy-body">
+  <div class="policy-inner">
+    <div class="policy-meta">
+      <p><strong>Practice:</strong> CareCross Surgery</p>
+      <p><strong>Location:</strong> Piet Retief, Mkhondo 2380</p>
+      <p><strong>Last Updated:</strong> 2026</p>
+      <p><strong>Governing Law:</strong> Republic of South Africa (POPIA)</p>
+    </div>
+
+    <div class="policy-section">
+      <h2><span>1</span> Introduction</h2>
+      <p>CareCross Surgery ("we", "our" or "the practice") is committed to protecting your privacy and the confidentiality of your personal and health information. This Privacy Policy explains how we collect, use, store and protect your information in accordance with the Protection of Personal Information Act 4 of 2013 (POPIA) and all applicable South African healthcare legislation.</p>
+      <p>By visiting our practice or using our website, you acknowledge that you have read and understood this Privacy Policy.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2><span>2</span> Information We Collect</h2>
+      <p>We may collect the following categories of personal information:</p>
+      <ul>
+        <li><strong>Identity Information:</strong> Full name, date of birth, gender and South African ID number or passport number.</li>
+        <li><strong>Contact Information:</strong> Home address, phone number, email address and WhatsApp contact details.</li>
+        <li><strong>Health Information:</strong> Medical history, clinical findings, test results, care plans and other clinical information gathered during consultations.</li>
+        <li><strong>Medical Aid Information:</strong> Medical aid scheme name, membership number and principal member details.</li>
+        <li><strong>Financial Information:</strong> Billing and payment information for consultation fees where applicable.</li>
+        <li><strong>Next of Kin:</strong> Emergency contact information where provided.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2><span>3</span> How We Use Your Information</h2>
+      <p>We use your personal and health information for the following purposes:</p>
+      <ul>
+        <li>To provide clinical consultations, assessment, care and follow-up.</li>
+        <li>To compile and maintain clinical records as required by law and professional standards.</li>
+        <li>To process medical aid claims and billing.</li>
+        <li>To issue medical certificates, sick notes, referral letters and other clinical documents.</li>
+        <li>To conduct SASSA medical assessments and complete required documentation.</li>
+        <li>To communicate with you regarding your appointments and healthcare.</li>
+        <li>To comply with legal and regulatory obligations under South African law.</li>
+        <li>To refer you to specialists or hospitals when clinically indicated.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2><span>4</span> Confidentiality of Health Information</h2>
+      <p>Your health information is strictly confidential. We will not disclose your medical information to any third party without your explicit consent, except in the following circumstances permitted or required by law:</p>
+      <ul>
+        <li>Where disclosure is required by a court order or other legal obligation.</li>
+        <li>Where disclosure is necessary to prevent serious harm to yourself or others.</li>
+        <li>Where disclosure is required for public health purposes under the National Health Act.</li>
+        <li>Where information is shared with another healthcare provider involved in your direct care.</li>
+        <li>Where information is submitted to your medical aid scheme for billing and claims purposes.</li>
+      </ul>
+      <p>All staff members of CareCross Surgery are bound by professional and contractual obligations of confidentiality.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2><span>5</span> Storage and Security</h2>
+      <p>We take reasonable technical and organisational measures to protect your personal information from unauthorised access, loss or disclosure. Patient records are stored securely and access is restricted to authorised personnel only.</p>
+      <p>Clinical records are retained for a minimum of six (6) years as required under South African healthcare law. Records of minor patients are retained until the patient reaches adulthood, plus six years thereafter.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2><span>6</span> Your Rights Under POPIA</h2>
+      <p>Under the Protection of Personal Information Act (POPIA), you have the following rights:</p>
+      <ul>
+        <li><strong>Right to Access:</strong> You may request access to the personal information we hold about you.</li>
+        <li><strong>Right to Correction:</strong> You may request correction of inaccurate personal information.</li>
+        <li><strong>Right to Deletion:</strong> You may request deletion of your personal information, subject to legal retention requirements.</li>
+        <li><strong>Right to Object:</strong> You may object to the processing of your personal information in certain circumstances.</li>
+        <li><strong>Right to Complain:</strong> You may lodge a complaint with the Information Regulator of South Africa.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2><span>7</span> Website and Digital Communication</h2>
+      <p>Our website does not collect personal information without your knowledge. Any information submitted via our contact channels — phone, WhatsApp or email — will be used solely to respond to your enquiry and schedule appointments.</p>
+      <p>Please be aware that communication via WhatsApp and email carries inherent security limitations. For sensitive clinical matters, we recommend discussing these in person during a consultation.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2><span>8</span> Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable law. The updated policy will be posted on our website. We encourage you to review this policy periodically.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2><span>9</span> Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy or wish to exercise your rights under POPIA, please contact us:</p>
+      <div class="contact-box">
+        <p><strong>CareCross Surgery</strong><br>
+        Shop 18, Mansoor Road, Opposite Mansoor Butchery, Opposite R H Piet Retief Private Hospital, Kempville, Mkhondo 2380, Northern Cape<br>
+        &#128222; <a href="tel:+27178263711">017 826 3711</a><br>
+        &#128172; WhatsApp: <a href="https://wa.me/27710465187">071 046 5187</a><br>
+        &#9993;&#65039; Email: <a href="mailto:info.carecross@gmail.com">info.carecross@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="nav-logo" href="index.html"><div class="nav-logo-icon">✚</div><div class="nav-logo-text"><span>CareCross Surgery</span><span>Quality &amp; Accessible Care</span></div></a>
+      <p>Professional, accessible primary healthcare for the Piet Retief community.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="after-hours.html">After-Hours</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="booking.html">Book Appointment</a></li>
+        <li><a href="policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><span>&#128205; Shop 18, Mansoor Road, Opposite Mansoor Butchery, Opposite R H Piet Retief Private Hospital, Kempville, Mkhondo 2380</span></li>
+        <li><a href="tel:+27178263711">&#128222; 017 826 3711</a></li>
+        <li><a href="tel:+27710465187">&#128241; 071 046 5187</a></li>
+        <li><a href="https://wa.me/27710465187" target="_blank" rel="noopener">&#128172; 071 046 5187 (WhatsApp)</a></li>
+        <li><a href="mailto:info.carecross@gmail.com">&#9993;&#65039; info.carecross@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 CareCross Surgery. All rights reserved. HPCSA Registered.</p>
+    <a href="policy.html">Privacy Policy</a>
+  </div>
+</footer>
+</body>
+</html>
