@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weight & Obesity Management | CareCross Surgery</title>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WWMSPFGG');</script>
+<!-- End Google Tag Manager -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --sage: #8b1a1a;
+    --sage-light: #f5e8e8;
+    --sage-mid: #c0504d;
+    --cream: #fdf8f6;
+    --charcoal: #2c1a1a;
+    --warm-gray: #7a6060;
+    --accent: #c87941;
+    --accent-light: #fdf1e8;
+    --white: #ffffff;
+    --border: #ead8d8;
+    --shadow: 0 4px 24px rgba(139,26,26,0.10);
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--charcoal); line-height: 1.7; }
+
+  /* GLOBAL IMAGE TREATMENT — greyscale with colour on hover */
+  img {
+    filter: grayscale(100%) contrast(1.05);
+    transition: filter 0.5s ease;
+  }
+  img:hover {
+    filter: grayscale(0%) contrast(1);
+  }
+  .pillar-card:hover img,
+  .exercise-card:hover img {
+    filter: grayscale(0%) contrast(1);
+  }
+
+  /* NAV */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(250,247,242,0.95); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    height: 68px;
+  }
+  .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.25rem; color: var(--sage); font-weight: 600; text-decoration: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { text-decoration: none; font-size: 0.9rem; color: var(--warm-gray); font-weight: 500; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage); }
+  .nav-cta { background: var(--sage); color: white; padding: 0.5rem 1.25rem; border-radius: 50px; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: background 0.2s; }
+  .nav-cta:hover { background: var(--charcoal); }
+
+  /* HERO */
+  .hero {
+    min-height: 88vh;
+    display: grid; grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0;
+    overflow: hidden;
+  }
+  .hero-text { padding: 4rem 4rem 4rem 6rem; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: var(--sage-light); color: var(--sage);
+    padding: 0.35rem 1rem; border-radius: 50px;
+    font-size: 0.8rem; font-weight: 500; letter-spacing: 0.03em;
+    margin-bottom: 1.5rem;
+  }
+  .hero-badge::before { content: ''; width: 6px; height: 6px; background: var(--sage); border-radius: 50%; }
+  h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.4rem, 4vw, 3.4rem); line-height: 1.15; color: var(--charcoal); margin-bottom: 1.25rem; }
+  h1 em { font-style: italic; color: var(--sage); }
+  .hero-sub { font-size: 1.1rem; color: var(--warm-gray); margin-bottom: 2.5rem; max-width: 480px; font-weight: 300; }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn-primary { background: var(--sage); color: white; padding: 0.85rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 500; transition: all 0.2s; }
+  .btn-primary:hover { background: var(--charcoal); transform: translateY(-1px); }
+  .btn-outline { border: 1.5px solid var(--sage); color: var(--sage); padding: 0.85rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 500; transition: all 0.2s; }
+  .btn-outline:hover { background: var(--sage-light); }
+  .hero-img {
+    height: 88vh; position: relative; overflow: hidden;
+  }
+  .hero-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+  .hero-img::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(to right, var(--cream) 0%, transparent 30%);
+  }
+  .stats-row {
+    display: flex; gap: 3rem; margin-top: 3rem; padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+  .stat-num { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--sage); font-weight: 600; }
+  .stat-label { font-size: 0.8rem; color: var(--warm-gray); margin-top: 0.15rem; }
+
+  /* SECTIONS */
+  section { padding: 5rem 6rem; }
+  .section-label { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sage); font-weight: 500; margin-bottom: 0.75rem; }
+  h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.6rem); color: var(--charcoal); line-height: 1.2; margin-bottom: 1rem; }
+  h2 em { color: var(--sage); font-style: italic; }
+  .section-intro { font-size: 1.05rem; color: var(--warm-gray); max-width: 560px; font-weight: 300; }
+
+  /* UNDERSTANDING BMI */
+  .bmi-section { background: var(--white); }
+  .bmi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 3rem; }
+  .bmi-image { border-radius: 20px; overflow: hidden; height: 400px; }
+  .bmi-image img { width: 100%; height: 100%; object-fit: cover; }
+  .bmi-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+  .bmi-table th { text-align: left; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--warm-gray); padding: 0.75rem 1rem; border-bottom: 1.5px solid var(--border); }
+  .bmi-table td { padding: 0.85rem 1rem; font-size: 0.95rem; border-bottom: 1px solid var(--border); }
+  .bmi-table tr:last-child td { border-bottom: none; }
+  .tag { display: inline-block; padding: 0.2rem 0.7rem; border-radius: 50px; font-size: 0.78rem; font-weight: 500; }
+  .tag-blue { background: #e8f4fd; color: #1565c0; }
+  .tag-green { background: var(--sage-light); color: var(--sage); }
+  .tag-amber { background: #fff3e0; color: #e65100; }
+  .tag-red { background: #fce8e6; color: #c62828; }
+  .tag-darkred { background: #f3e0e0; color: #7f1d1d; }
+
+  /* PILLARS */
+  .pillars-section { background: var(--cream); }
+  .pillars-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; }
+  .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .pillar-card {
+    background: var(--white); border-radius: 20px; overflow: hidden;
+    border: 1px solid var(--border); transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .pillar-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+  .pillar-img { height: 200px; overflow: hidden; }
+  .pillar-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+  .pillar-card:hover .pillar-img img { transform: scale(1.04); }
+  .pillar-body { padding: 1.5rem; }
+  .pillar-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+  .pillar-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--charcoal); margin-bottom: 0.5rem; }
+  .pillar-desc { font-size: 0.9rem; color: var(--warm-gray); font-weight: 300; line-height: 1.6; }
+  .pillar-link { display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: var(--sage); font-weight: 500; text-decoration: none; }
+  .pillar-link::after { content: ' →'; }
+
+  /* DIET */
+  .diet-section { background: var(--sage-light); }
+  .diet-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: center; margin-top: 3rem; }
+  .diet-content h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--charcoal); margin: 1.5rem 0 0.75rem; }
+  .food-tips { display: grid; gap: 0.75rem; margin-top: 1.5rem; }
+  .food-tip { display: flex; align-items: flex-start; gap: 0.75rem; background: var(--white); padding: 1rem 1.25rem; border-radius: 12px; border: 1px solid var(--border); }
+  .food-tip-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 0.1rem; }
+  .food-tip-text strong { display: block; font-size: 0.9rem; color: var(--charcoal); margin-bottom: 0.2rem; }
+  .food-tip-text span { font-size: 0.85rem; color: var(--warm-gray); }
+  .diet-image-stack { position: relative; }
+  .diet-img-main { border-radius: 20px; overflow: hidden; height: 480px; }
+  .diet-img-main img { width: 100%; height: 100%; object-fit: cover; }
+  .diet-img-float {
+    position: absolute; bottom: -2rem; left: -3rem;
+    width: 200px; height: 200px;
+    border-radius: 16px; overflow: hidden;
+    border: 4px solid var(--sage-light);
+    box-shadow: var(--shadow);
+  }
+  .diet-img-float img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* EXERCISE */
+  .exercise-section { background: var(--charcoal); padding: 5rem 6rem; }
+  .exercise-section .section-label { color: var(--sage-mid); }
+  .exercise-section h2 { color: var(--white); }
+  .exercise-section .section-intro { color: rgba(255,255,255,0.6); }
+  .exercise-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .exercise-card { border-radius: 16px; overflow: hidden; position: relative; height: 280px; cursor: pointer; }
+  .exercise-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+  .exercise-card:hover img { transform: scale(1.06); }
+  .exercise-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(43,58,46,0.9) 0%, transparent 55%);
+    display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem;
+  }
+  .exercise-type { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--sage-mid); margin-bottom: 0.35rem; }
+  .exercise-name { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: white; }
+  .exercise-min { font-size: 0.8rem; color: rgba(255,255,255,0.6); margin-top: 0.2rem; }
+  .exercise-rec {
+    margin-top: 3rem; padding: 2rem 2.5rem;
+    background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem;
+  }
+  .exercise-rec p { color: rgba(255,255,255,0.75); font-size: 0.95rem; }
+  .exercise-rec strong { color: white; display: block; font-size: 1rem; margin-bottom: 0.3rem; }
+  .badge-rec { background: var(--sage); color: white; padding: 0.5rem 1.25rem; border-radius: 50px; font-size: 0.85rem; font-weight: 500; white-space: nowrap; }
+
+  /* MEDICAL */
+  .medical-section { background: var(--white); }
+  .medical-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 5rem; align-items: center; margin-top: 3rem; }
+  .medical-image { border-radius: 20px; overflow: hidden; height: 460px; }
+  .medical-image img { width: 100%; height: 100%; object-fit: cover; }
+  .treatment-list { display: grid; gap: 1.25rem; }
+  .treatment-item { padding: 1.25rem 1.5rem; border-radius: 14px; border: 1px solid var(--border); }
+  .treatment-item h4 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--charcoal); margin-bottom: 0.35rem; }
+  .treatment-item p { font-size: 0.88rem; color: var(--warm-gray); font-weight: 300; }
+  .treatment-item.highlight { border-color: var(--sage); background: var(--sage-light); }
+  .treatment-item.highlight h4 { color: var(--sage); }
+
+  /* MENTAL */
+  .mental-section { background: var(--accent-light); }
+  .mental-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+  .mental-card { background: var(--white); border-radius: 16px; padding: 2rem; border: 1px solid #f0dece; }
+  .mental-card-num { font-family: 'Playfair Display', serif; font-size: 3rem; color: #e8c4a0; font-weight: 600; line-height: 1; margin-bottom: 1rem; }
+  .mental-card h4 { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--charcoal); margin-bottom: 0.5rem; }
+  .mental-card p { font-size: 0.88rem; color: var(--warm-gray); line-height: 1.65; }
+
+  /* CTA */
+  .cta-section {
+    background: var(--sage); padding: 5rem 6rem;
+    display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 3rem;
+  }
+  .cta-section h2 { color: white; }
+  .cta-section p { color: rgba(255,255,255,0.75); margin-top: 0.75rem; max-width: 500px; }
+  .btn-white { background: white; color: var(--sage); padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 500; transition: all 0.2s; display: inline-block; }
+  .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
+
+  /* FOOTER */
+  footer { background: var(--charcoal); padding: 2.5rem 6rem; display: flex; align-items: center; justify-content: space-between; }
+  footer p { font-size: 0.85rem; color: rgba(255,255,255,0.4); }
+  footer a { color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.85rem; }
+  footer a:hover { color: rgba(255,255,255,0.7); }
+
+  @media (max-width: 900px) {
+    nav { padding: 0 1.5rem; }
+    .nav-links { display: none; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-text { padding: 3rem 1.5rem; }
+    .hero-img { height: 50vh; }
+    section, .exercise-section, .cta-section, footer { padding: 3rem 1.5rem; }
+    .bmi-grid, .diet-grid, .medical-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .pillars-grid, .exercise-grid, .mental-cards { grid-template-columns: 1fr; }
+    .cta-section { grid-template-columns: 1fr; }
+    .exercise-grid { grid-template-columns: 1fr 1fr; }
+    .stats-row { gap: 2rem; }
+    .diet-img-float { display: none; }
+    .pillars-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWMSPFGG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">CareCross Surgery</a>
+  <ul class="nav-links">
+    <li><a href="#understanding">Understanding</a></li>
+    <li><a href="#pillars">Our Approach</a></li>
+    <li><a href="#diet">Nutrition</a></li>
+    <li><a href="#exercise">Exercise</a></li>
+    <li><a href="#medical">Treatment</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Book Consultation</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <div class="hero-badge">Momentum Health · Accredited GP Practice</div>
+    <h1>Take control of your <em>weight</em> and your health</h1>
+    <p class="hero-sub">Evidence-based obesity management from CareCross Surgery — your accredited Momentum Health GP practice. Personalised plans, medical support, and lasting results.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Book a Consultation</a>
+      <a href="#understanding" class="btn-outline">Learn More</a>
+    </div>
+    <div class="stats-row">
+      <div>
+        <div class="stat-num">2.3B</div>
+        <div class="stat-label">Adults overweight globally</div>
+      </div>
+      <div>
+        <div class="stat-num">80%</div>
+        <div class="stat-label">Reduction in type 2 diabetes risk</div>
+      </div>
+      <div>
+        <div class="stat-num">5–10%</div>
+        <div class="stat-label">Weight loss for major health gain</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=80" alt="Healthy active lifestyle" loading="eager">
+  </div>
+</div>
+
+<!-- UNDERSTANDING -->
+<section class="bmi-section" id="understanding">
+  <div class="section-label">Understanding Obesity</div>
+  <h2>What is obesity and <em>why does it matter?</em></h2>
+  <p class="section-intro">Obesity is a complex, chronic medical condition — not a lifestyle choice. It affects nearly every organ system and dramatically increases the risk of serious disease.</p>
+
+  <div class="bmi-grid">
+    <div>
+      <p style="color: var(--warm-gray); font-weight: 300; margin-bottom: 1.5rem;">Body Mass Index (BMI) is one of the primary screening tools used to classify weight status. It is calculated as weight (kg) divided by height squared (m²). While it has limitations, it remains a useful starting point for clinical assessment.</p>
+      <table class="bmi-table">
+        <thead>
+          <tr><th>BMI Range</th><th>Classification</th><th>Health Risk</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Below 18.5</td><td><span class="tag tag-blue">Underweight</span></td><td>Increased</td></tr>
+          <tr><td>18.5 – 24.9</td><td><span class="tag tag-green">Normal weight</span></td><td>Low</td></tr>
+          <tr><td>25.0 – 29.9</td><td><span class="tag tag-amber">Overweight</span></td><td>Moderate</td></tr>
+          <tr><td>30.0 – 34.9</td><td><span class="tag tag-red">Obese Class I</span></td><td>High</td></tr>
+          <tr><td>35.0 – 39.9</td><td><span class="tag tag-red">Obese Class II</span></td><td>Very High</td></tr>
+          <tr><td>40.0 and above</td><td><span class="tag tag-darkred">Obese Class III</span></td><td>Extremely High</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size: 0.8rem; color: var(--warm-gray); margin-top: 1rem; font-style: italic;">Note: BMI thresholds for Asian populations are typically lower. Waist circumference and other metabolic markers are also important.</p>
+    </div>
+    <div class="bmi-image">
+      <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?w=700&q=80" alt="Doctor discussing health with patient">
+    </div>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section class="pillars-section" id="pillars">
+  <div class="pillars-header">
+    <div>
+      <div class="section-label">Our Approach</div>
+      <h2>A <em>comprehensive</em> four-pillar framework</h2>
+    </div>
+    <p class="section-intro" style="max-width: 320px; font-size: 0.9rem;">Sustainable weight management requires addressing all dimensions of health simultaneously.</p>
+  </div>
+  <div class="pillars-grid">
+    <div class="pillar-card">
+      <div class="pillar-img">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&q=80" alt="Healthy nutrition">
+      </div>
+      <div class="pillar-body">
+        <div class="pillar-icon">🥗</div>
+        <div class="pillar-title">Medical Nutrition Therapy</div>
+        <p class="pillar-desc">Personalised dietary plans designed by your doctor. Caloric targets, macronutrient balance, and meal timing tailored to your metabolic profile.</p>
+        <a href="#diet" class="pillar-link">Explore nutrition</a>
+      </div>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-img">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&q=80" alt="Exercise and physical activity">
+      </div>
+      <div class="pillar-body">
+        <div class="pillar-icon">🏃</div>
+        <div class="pillar-title">Physical Activity</div>
+        <p class="pillar-desc">Structured exercise prescriptions appropriate for your fitness level. Aerobic, resistance, and flexibility training to boost metabolism and preserve muscle.</p>
+        <a href="#exercise" class="pillar-link">Explore exercise</a>
+      </div>
+    </div>
+    <div class="pillar-card">
+      <div class="pillar-img">
+        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80" alt="Behavioral support">
+      </div>
+      <div class="pillar-body">
+        <div class="pillar-icon">🧠</div>
+        <div class="pillar-title">Behavioural & Psychological Support</div>
+        <p class="pillar-desc">Addressing emotional eating, sleep hygiene, stress management, and building sustainable habits with structured behavioural intervention.</p>
+        <a href="#mental" class="pillar-link">Explore support</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIET -->
+<section class="diet-section" id="diet">
+  <div class="section-label">Nutrition</div>
+  <h2>Eating well for <em>lasting change</em></h2>
+  <div class="diet-grid">
+    <div class="diet-content">
+      <p class="section-intro">There is no single diet that works for everyone. Our approach is evidence-based, sustainable, and personalised — not fad-driven.</p>
+      <h3>Key dietary principles</h3>
+      <div class="food-tips">
+        <div class="food-tip">
+          <div class="food-tip-icon">🥦</div>
+          <div class="food-tip-text">
+            <strong>Prioritise whole, unprocessed foods</strong>
+            <span>Vegetables, legumes, whole grains, lean proteins, and healthy fats form the foundation of any effective eating plan.</span>
+          </div>
+        </div>
+        <div class="food-tip">
+          <div class="food-tip-icon">⚖️</div>
+          <div class="food-tip-text">
+            <strong>Caloric deficit — done sustainably</strong>
+            <span>A modest 500–750 kcal/day deficit produces 0.5–1 kg/week loss without triggering metabolic adaptation. Crash diets are counterproductive.</span>
+          </div>
+        </div>
+        <div class="food-tip">
+          <div class="food-tip-icon">💧</div>
+          <div class="food-tip-text">
+            <strong>Hydration matters</strong>
+            <span>Drinking water before meals reduces appetite. Aim for 8–10 glasses daily. Avoid sugar-sweetened beverages entirely.</span>
+          </div>
+        </div>
+        <div class="food-tip">
+          <div class="food-tip-icon">🕐</div>
+          <div class="food-tip-text">
+            <strong>Meal timing and frequency</strong>
+            <span>Regular meals prevent binge eating. Avoid eating after 8pm. Breakfast supports metabolic function throughout the day.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="diet-image-stack">
+      <div class="diet-img-main">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=700&q=80" alt="Nutritious colourful meal">
+      </div>
+      <div class="diet-img-float">
+        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=400&q=80" alt="Fresh fruits and vegetables">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXERCISE -->
+<section class="exercise-section" id="exercise">
+  <div class="section-label">Physical Activity</div>
+  <h2 style="color:white;">Move more, <em style="color:var(--sage-mid);">live better</em></h2>
+  <p class="section-intro">Exercise is medicine. Regular physical activity is essential for weight management, cardiovascular health, metabolic function, and mental wellbeing.</p>
+  <div class="exercise-grid">
+    <div class="exercise-card">
+      <img src="https://images.unsplash.com/photo-1483721310020-03333e577078?w=500&q=80" alt="Walking exercise">
+      <div class="exercise-overlay">
+        <div class="exercise-type">Low Impact</div>
+        <div class="exercise-name">Brisk Walking</div>
+        <div class="exercise-min">30 min · 5×/week</div>
+      </div>
+    </div>
+    <div class="exercise-card">
+      <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=500&q=80" alt="Swimming">
+      <div class="exercise-overlay">
+        <div class="exercise-type">Aerobic</div>
+        <div class="exercise-name">Swimming</div>
+        <div class="exercise-min">45 min · 3×/week</div>
+      </div>
+    </div>
+    <div class="exercise-card">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&q=80" alt="Strength training">
+      <div class="exercise-overlay">
+        <div class="exercise-type">Strength</div>
+        <div class="exercise-name">Resistance Training</div>
+        <div class="exercise-min">40 min · 3×/week</div>
+      </div>
+    </div>
+    <div class="exercise-card">
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=500&q=80" alt="Yoga and flexibility">
+      <div class="exercise-overlay">
+        <div class="exercise-type">Flexibility</div>
+        <div class="exercise-name">Yoga & Stretching</div>
+        <div class="exercise-min">30 min · daily</div>
+      </div>
+    </div>
+  </div>
+  <div class="exercise-rec">
+    <div>
+      <strong>WHO Physical Activity Recommendation</strong>
+      <p>Adults should aim for at least 150–300 minutes of moderate-intensity aerobic activity per week, plus muscle-strengthening activities on 2 or more days. Even small increases in activity provide meaningful health benefits.</p>
+    </div>
+    <div class="badge-rec">WHO Guideline</div>
+  </div>
+</section>
+
+<!-- MEDICAL TREATMENT -->
+<section class="medical-section" id="medical">
+  <div class="section-label">Medical Treatment</div>
+  <h2>When lifestyle alone <em>needs support</em></h2>
+  <p class="section-intro">For many patients, medical and pharmacological interventions significantly improve outcomes when combined with lifestyle modification.</p>
+  <div class="medical-grid">
+    <div class="medical-image">
+      <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=700&q=80" alt="Medical consultation with doctor">
+    </div>
+    <div>
+      <div class="treatment-list">
+        <div class="treatment-item highlight">
+          <h4>Comprehensive Medical Assessment</h4>
+          <p>Full evaluation including BMI, waist circumference, blood pressure, lipid profile, HbA1c, thyroid function, and cardiovascular risk scoring to guide personalised treatment.</p>
+        </div>
+        <div class="treatment-item">
+          <h4>Pharmacotherapy</h4>
+          <p>Approved weight-loss medications (e.g. Orlistat, GLP-1 receptor agonists) may be appropriate for BMI ≥30 or ≥27 with comorbidities, when diet and exercise are insufficient.</p>
+        </div>
+        <div class="treatment-item">
+          <h4>Comorbidity Management</h4>
+          <p>Simultaneous management of related conditions — type 2 diabetes, hypertension, dyslipidaemia, PCOS, and sleep apnoea — is integral to successful weight management.</p>
+        </div>
+        <div class="treatment-item">
+          <h4>Bariatric Surgery Referral</h4>
+          <p>For eligible patients with BMI ≥40, or ≥35 with severe comorbidities, surgical options (sleeve gastrectomy, gastric bypass) may be considered via specialist referral.</p>
+        </div>
+        <div class="treatment-item">
+          <h4>Regular Monitoring & Follow-up</h4>
+          <p>Structured follow-up visits every 4–8 weeks to monitor progress, adjust treatment, and provide ongoing support — accountability is key to long-term success.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENTAL / BEHAVIOURAL -->
+<section class="mental-section" id="mental">
+  <div class="section-label">Behavioural Support</div>
+  <h2>The <em>mind-body</em> connection in weight management</h2>
+  <p class="section-intro">Psychological and behavioural factors are often the missing piece in weight management. Addressing them is essential for sustainable results.</p>
+  <div class="mental-cards">
+    <div class="mental-card">
+      <div class="mental-card-num">01</div>
+      <h4>Cognitive Behavioural Techniques</h4>
+      <p>Identifying and changing unhelpful thought patterns around food, body image, and self-worth. Reframing setbacks as learning opportunities rather than failures.</p>
+    </div>
+    <div class="mental-card">
+      <div class="mental-card-num">02</div>
+      <h4>Emotional Eating Awareness</h4>
+      <p>Recognising triggers that drive eating in the absence of hunger — stress, boredom, loneliness — and developing alternative coping strategies that don't involve food.</p>
+    </div>
+    <div class="mental-card">
+      <div class="mental-card-num">03</div>
+      <h4>Sleep & Stress Management</h4>
+      <p>Poor sleep raises ghrelin and reduces leptin, promoting hunger and cravings. Chronic stress elevates cortisol, driving abdominal fat deposition. Both must be addressed.</p>
+    </div>
+    <div class="mental-card">
+      <div class="mental-card-num">04</div>
+      <h4>Goal Setting & Self-Monitoring</h4>
+      <p>SMART goal-setting, food diaries, step counting, and regular weigh-ins with clinical support have consistently been shown to improve weight loss outcomes.</p>
+    </div>
+    <div class="mental-card">
+      <div class="mental-card-num">05</div>
+      <h4>Social Support Networks</h4>
+      <p>Family involvement, peer support groups, and community-based programmes substantially improve adherence to lifestyle change and long-term weight maintenance.</p>
+    </div>
+    <div class="mental-card">
+      <div class="mental-card-num">06</div>
+      <h4>Relapse Prevention</h4>
+      <p>Weight regain is common and normal. Having a structured plan for high-risk periods, holidays, and stress events significantly reduces the severity of regain.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div>
+    <h2>Ready to start your journey?</h2>
+    <p>Book a confidential consultation with our doctor today. We'll create a personalised weight management plan tailored to your health, lifestyle, and goals.</p>
+  </div>
+  <a href="mailto:info.carecross@gmail.com" class="btn-white">Email Us to Book</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 CareCross Surgery. All rights reserved.</p>
+  <p>Medical information on this page is for educational purposes. Please consult your doctor for personalised advice. <a href="#">Privacy Notice</a></p>
+</footer>
+
+</body>
+</html>
